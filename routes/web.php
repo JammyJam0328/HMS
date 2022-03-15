@@ -42,4 +42,6 @@ Route::group(['middleware' => ['auth:sanctum', 'verified','user']], function () 
 
 Route::group(['prefix' => 'branch', 'middleware' => ['auth:sanctum', 'verified','branch-admin']], function () {
    Route::get('/dashboard',\App\Http\Livewire\Branch\Dashboard::class)->name('branch.dashboard');
+   Route::get('/my-branch',\App\Http\Livewire\Branch\MyBranch::class)->name('branch.my-branch');
+   Route::get('/room/{room_id}/pricing',\App\Http\Livewire\Branch\Pricing::class)->name('branch.room-pricing');
 });
