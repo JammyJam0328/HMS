@@ -11,6 +11,12 @@ class Booking extends Component
     {
         $this->branch_id = $branch_id;
     }
+
+    public function getBranchProperty()
+    {
+        return \App\Models\Branch::where('id',$this->branch_id)->with('rooms')->first();
+    }
+
     public function render()
     {
         return view('livewire.user.booking')
