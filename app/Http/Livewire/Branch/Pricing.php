@@ -10,6 +10,7 @@ class Pricing extends Component
     public $set_id;
     public $action='show';
     public $room_id;
+    public $creating=false;
 
     public $hours;
     public $price;
@@ -43,7 +44,7 @@ class Pricing extends Component
     public function createPricing()
     {
         $this->validate([
-            'hours'=>'required|numeric',
+            'hours'=>'required',
             'price'=>'required|numeric'
         ]);
 
@@ -58,8 +59,7 @@ class Pricing extends Component
             'price'
         ]);
 
-        $this->show();
+        $this->creating=false;
         session()->flash('success', 'Pricing has been created successfully');
-        
     }
 }

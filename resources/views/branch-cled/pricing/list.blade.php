@@ -5,7 +5,7 @@
             <p class="mt-2 text-sm text-gray-700">A list of all pricing for this room</p>
         </div>
         <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
-            <button wire:click="$set('action','create')"
+            <button wire:click="$set('creating',true)"
                 type="button"
                 class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-gray-700 border border-transparent rounded-md shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:w-auto">
                 Add new pricing
@@ -42,13 +42,13 @@
             <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                 <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
                     <table class="min-w-full divide-y divide-gray-300">
-                        <thead class="bg-gray-700">
+                        <thead class="bg-gray-200">
                             <tr>
                                 <th scope="col"
-                                    class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-white sm:pl-6">
+                                    class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-700 sm:pl-6">
                                     Hours</th>
                                 <th scope="col"
-                                    class="px-3 py-3.5 text-left text-sm font-semibold text-white">Amount
+                                    class="px-3 py-3.5 text-left text-sm font-semibold text-gray-700">Amount
                                 </th>
 
                                 <th scope="col"

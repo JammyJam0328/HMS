@@ -16,20 +16,15 @@
         </svg>
     </div>
     <div>
-        @switch($action)
-            @case('show')
-                <div>
-                    @include('branch-cled.pricing.list')
-                </div>
-            @break
-
-            @case('create')
+        <div>
+            @include('branch-cled.pricing.list')
+        </div>
+        <div>
+            @if ($creating == true)
                 <div>
                     @include('branch-cled.pricing.create')
                 </div>
-            @break
-
-            @default
-        @endswitch
+            @endif
+        </div>
     </div>
 </x-b.page-layout>

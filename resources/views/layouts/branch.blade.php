@@ -230,7 +230,7 @@
                     <nav class="flex-1 px-2 pb-4 space-y-1">
 
                         <a href="{{ route('branch.dashboard') }}"
-                            class="{{ Request::routeIs('branch.dashboard')? 'bg-gray-700 text-white hover:bg-gray-600': 'text-gray-600 hover:bg-gray-50 hover:text-gray-900' }} flex items-center px-2 py-2 text-lg font-semibold  border rounded-md  group">
+                            class="{{ Request::routeIs('branch.dashboard')? 'bg-gray-700 text-white hover:bg-gray-600 hover:text-white': 'text-gray-600 hover:bg-gray-50 hover:text-gray-900' }} flex items-center px-2 py-2 text-lg font-semibold  border rounded-md  group">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="flex-shrink-0 w-6 h-6 mr-3 "
                                 viewBox="0 0 20 20"
@@ -268,7 +268,7 @@
                             Payment
                         </a>
                         <a href="{{ route('branch.my-branch') }}"
-                            class="{{ Request::routeIs('branch.my-branch')? 'bg-gray-700 text-white hover:bg-gray-600': 'text-gray-600 hover:bg-gray-50 hover:text-gray-900' }} flex items-center px-2 py-2 text-lg font-semibold text-gray-600 border rounded-md hover:bg-gray-50 hover:text-gray-900 group">
+                            class="{{ Request::routeIs('branch.my-branch')? 'bg-gray-700 text-white hover:bg-gray-600 hover:text-white': 'text-gray-600 hover:bg-gray-50 hover:text-gray-900' }} flex items-center px-2 py-2 text-lg font-semibold text-gray-600 border rounded-md hover:bg-gray-50 hover:text-gray-900 group">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="flex-shrink-0 w-6 h-6 mr-3 "
                                 viewBox="0 0 20 20"
