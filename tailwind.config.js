@@ -15,6 +15,9 @@ module.exports = {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
                 poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: {
+                mainback: "url('/images/main-bg.svg')",
+            },
         },
     },
 
