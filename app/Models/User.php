@@ -62,7 +62,7 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-    public function brach()
+    public function branch()
     {
         return $this->belongsTo(Branch::class);
     }

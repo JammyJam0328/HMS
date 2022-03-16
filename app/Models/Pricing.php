@@ -5,18 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Branch extends Model
+class Pricing extends Model
 {
     use HasFactory;
     protected $guarded=[];
 
-    public function users()
+    public function room()
     {
-        return $this->hasMany(User::class);
-    }
-
-    public function rooms()
-    {
-        return $this->hasMany(Room::class);
+        return $this->belongsTo(Room::class);
     }
 }
