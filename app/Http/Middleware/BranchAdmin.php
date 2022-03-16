@@ -16,7 +16,7 @@ class BranchAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if (!auth()->user()->role == 'branch-admin') {
+        if (auth()->user()->role != 'branch-admin') {
            abort(403, 'Unauthorized action.');
         }
         return $next($request);

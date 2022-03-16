@@ -16,8 +16,8 @@ class User
      */
     public function handle(Request $request, Closure $next)
     {
-       if (!auth()->user()->role == 'user') {
-            abort(403, 'Unauthorized action.');
+       if (auth()->user()->role != 'user') {
+           return redirect('/dashboard');
         }
         return $next($request);
     }

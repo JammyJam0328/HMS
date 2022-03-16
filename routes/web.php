@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/',\App\Http\Livewire\User\HomePage::class)->name('home');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
    switch (auth()->user()->role) {
       case 'admin':
